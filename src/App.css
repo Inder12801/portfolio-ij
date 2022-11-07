@@ -1,38 +1,739 @@
-.App {
-  text-align: center;
-}
+@import url("https://fonts.googleapis.com/css2?family=Barlow&family=Lobster&family=Righteous&family=Secular+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
+@import url("https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Dancing+Script:wght@600&family=Great+Vibes&family=Marck+Script&family=Mea+Culpa&family=Monoton&family=Overpass&family=Pacifico&family=Parisienne&family=Raleway&family=Rubik+Bubbles&family=Rubik:wght@400;800;900&family=Satisfy&family=Signika+Negative&display=swap");
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+body {
+  width: 100vw;
+  background: #0a0a0a;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+html {
+  scroll-behavior: smooth;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --xcolor: #ec0101;
+  --default-border-radius: 5px;
+}
+
+.bar {
+  position: absolute;
+  z-index: 2;
+  left: -100px;
+  top: 100px;
+  width: 100px;
+  height: 10px;
+  border-radius: 0 20px 20px 0;
+  background-color: red;
+  animation: barAnim 1s 1s infinite alternate-reverse;
+}
+
+.bar:nth-child(2) {
+  top: 140px;
+  left: -70px;
+  width: 70px;
+  animation-delay: 2s;
+}
+.bar:nth-child(3) {
+  top: 180px;
+  left: -90px;
+  width: 90px;
+  animation-delay: 1.5s;
+}
+
+@keyframes barAnim {
+  0% {
+    transform: translateX(0%);
   }
-  to {
-    transform: rotate(360deg);
+
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+.homepage {
+  width: 100vw;
+  height: 100vh;
+  font-family: "Barlow", sans-serif;
+}
+
+.navbar {
+  width: 100%;
+  height: 12%;
+  background: #242324;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  padding: 5px 0;
+  z-index: 5;
+  /*     border: 2px solid white; */
+}
+
+.logo {
+  font-size: 2.8vmax;
+  margin-left: 85px;
+  font-family: "Dancing Script", cursive;
+  font-weight: 900;
+  color: white;
+  text-shadow: 2px 2px var(--xcolor);
+  transition: 0.4s ease;
+  transform: rotateZ(-5deg);
+}
+.logo:hover {
+  color: white;
+  text-shadow: 2px 2px #ec0101;
+}
+
+.navlinks {
+  display: flex;
+  list-style: none;
+  position: relative;
+  right: 60px;
+  font-size: 1.6vmax;
+  transition: 0.6s linear;
+}
+
+.navlinks li {
+  margin: 0 15px;
+  border-top: 2px solid transparent;
+  cursor: pointer;
+  transition: 0.8s ease;
+}
+.navlinks li:hover {
+  border-top: 2px solid var(--xcolor);
+}
+
+a {
+  color: white;
+}
+
+.menu-bar {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  right: 20px;
+  background-color: white;
+  width: 50px;
+  height: 42px;
+  border-radius: 0 0 40px 40px;
+}
+
+.menu-bar i {
+  color: var(--xcolor);
+  font-size: 22px;
+}
+
+.fa-bars {
+  color: white;
+  font-size: 25px;
+}
+
+.main {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 90%;
+  position: relative;
+  top: 25%;
+  margin: auto;
+}
+
+.main img {
+  width: 300px;
+  height: 400px;
+}
+
+.intro {
+  /*   width: 35%; */
+  height: 350px;
+  /*   left: 22%;
+  top: 35%;
+  position: relative; */
+  margin-top: 50px;
+  color: white;
+}
+
+.intro-job {
+  font-size: 2.5vmax;
+}
+
+.intro-content {
+  max-width: 200px;
+  min-height: 100px;
+  font-size: 2vmax;
+
+  font-family: "Secular One", sans-serif;
+}
+
+.intro-content span {
+  color: var(--xcolor);
+}
+
+.btn {
+  height: 50px;
+  border: 1px solid var(--xcolor);
+  background: transparent;
+  color: white;
+  padding: 10px 30px;
+  font-size: 1.3vmax;
+  border-radius: 2px;
+  cursor: pointer;
+  font-family: "Poppins", sans-serif;
+  position: relative;
+  text-transform: capitalize;
+  margin-top: 40px;
+  transition: 0.5s linear;
+}
+
+.btn:hover {
+  background: var(--xcolor);
+}
+
+.about {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  font-family: "Barlow", sans-serif;
+  position: relative;
+}
+
+.about .bar:nth-child(1) {
+  top: 60px;
+}
+.about .bar:nth-child(2) {
+  top: 100px;
+}
+.about .bar:nth-child(3) {
+  top: 140px;
+}
+
+.img-div {
+  width: 30vw;
+  position: relative;
+  top: 8%;
+  left: 15%;
+}
+.img-div img {
+  width: 100%;
+}
+
+.about-content {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 40%;
+  top: 8%;
+  left: 22%;
+}
+
+.about-content h1 {
+  font-size: 4.5vmax;
+  font-weight: 700;
+  transition: 1s ease;
+  animation: anim 1s infinite alternate;
+  animation-delay: 2s;
+}
+
+@keyframes anim {
+  0% {
+    opacity: 0;
+  }
+  /*   25%{
+		opacity: .25;
+    color: var(--xcolor);
+  }
+  50%{
+		opacity: .25;
+    color: white;
+  }
+	75%{
+		opacity: .75;
+	} */
+  100% {
+    opacity: 1;
+    color: var(--xcolor);
+  }
+}
+
+.about-content h1:hover {
+  text-shadow: 2px 2px #ec0101;
+}
+
+.about-content-desc {
+  font-size: 1.3vmax;
+  width: 70%;
+  margin: 30px 0;
+}
+
+.SEE-section ul li {
+  list-style: none;
+  display: inline-block;
+  font-size: 1.8vmax;
+  margin-right: 25px;
+  cursor: pointer;
+  transition: 0.4s ease;
+}
+
+.SEE-section ul li:hover {
+  color: var(--xcolor);
+  transform: scale(1.1);
+}
+
+.see-deatils {
+  display: flex;
+  margin-top: 20px;
+}
+
+.details h3 {
+  color: aqua;
+}
+.details p {
+  margin: 10px 0;
+}
+
+/* -------------------------SERVICE SECTION------------------------ */
+
+.services {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Barlow", sans-serif;
+}
+.service-heading {
+  margin-top: 115px;
+  font-size: 3.4vmax;
+}
+
+.service-cards {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-top: 50px;
+}
+
+.service-card {
+  border: 2px solid;
+  width: 20vmax;
+  height: 20vmax;
+  display: flex;
+  flex-direction: column;
+  padding-top: 30px;
+  padding-left: 30px;
+  margin: 0 30px;
+  transition: 0.5s ease;
+}
+
+.service-card i {
+  font-size: 3vmax;
+  margin: 13px 0;
+}
+
+.service-card h4 {
+  font-size: 1.8vmax;
+  font-family: "Barlow", sans-serif;
+  letter-spacing: 2px;
+  margin-top: 25px;
+}
+
+.service-card p {
+  font-size: 1.2vmax;
+  font-weight: 500;
+  margin-top: 25px;
+  opacity: 0;
+  transition: 0.5s ease;
+}
+
+.service-card:hover {
+  background-color: var(--xcolor);
+}
+.service-card:hover p {
+  opacity: 1;
+}
+
+/* ------------------------------------------------------------------ */
+
+/* --------------------------WORK SECTION---------------------------- */
+
+.work {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Barlow", sans-serif;
+}
+
+.work h1 {
+  margin-top: 115px;
+  font-size: 3.4vmax;
+}
+
+.work-cards {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-top: 50px;
+}
+
+.work-card {
+  border: 2px solid;
+  width: 20vmax;
+  height: 20vmax;
+
+  padding-left: 30px;
+  margin: 0 30px;
+
+  transition: 0.5s ease;
+}
+
+.work-card-content {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  display: none;
+  transition: 0.5s ease;
+  position: relative;
+  z-index: -1;
+}
+
+.work-card:nth-child(1) {
+  background-image: url("https://static.vecteezy.com/system/resources/previews/009/773/549/original/tic-tac-toe-set-children-game-strategy-illustration-on-white-background-vector.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 100% 100%;
+}
+
+.work-card:nth-child(2) {
+  background-image: url("https://www.researchgate.net/publication/303597105/figure/fig1/AS:367253058015232@1464571360766/Screenshot-of-the-whack-a-mole-game.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 100% 100%;
+}
+.work-card:nth-child(3) {
+  background-image: url("https://images.pexels.com/photos/7213436/pexels-photo-7213436.jpeg?auto=compress&cs=tinysrgb&w=600");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 100% 100%;
+}
+
+.work-card-content h4 {
+  font-size: 2vmax;
+}
+.work-card-content p {
+  font-size: 1.3vmax;
+}
+
+.work-card-content i {
+  font-size: 30px;
+  margin-left: 37%;
+}
+
+.work-card i:hover {
+  transform: scale(1.05);
+}
+
+.work-card:hover {
+  background-color: var(--xcolor);
+  background: var(--xcolor);
+}
+.work-card:hover .work-card-content {
+  z-index: 1;
+  display: flex;
+}
+
+#seeMore {
+  font-family: "Barlow", sans-serif;
+  margin-top: 40px;
+}
+
+/* ------------------------------------------------------------------ */
+
+/* ---------------------------CONTACT SECTION------------------------- */
+
+.contact {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Barlow", sans-serif;
+}
+
+.contact h1 {
+  margin-top: 115px;
+  font-size: 3.4vmax;
+}
+
+.contact-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  margin-top: 40px;
+}
+
+.formSection {
+  width: 35%;
+  margin: 0 40px;
+}
+
+.formSection form {
+  display: flex;
+  flex-direction: column;
+}
+
+.formSection input {
+  width: 100%;
+  margin-bottom: 4%;
+  font-size: 1.5vmax;
+  padding: 10px;
+  background: #242324;
+  border: none;
+  color: white;
+  border-radius: 2px;
+  font-family: "Barlow", sans-serif;
+}
+
+.formSection textarea {
+  width: 100%;
+  margin-bottom: 4%;
+  font-size: 1.4rem;
+  padding: 10px;
+  background: #242324;
+  border: none;
+  color: white;
+  border-radius: 2px;
+  font-family: "Barlow", sans-serif;
+}
+
+.formSection form button {
+  width: 50%;
+  margin: 30px auto;
+}
+
+.detailsBox {
+  display: flex;
+  justify-content: space-evenly;
+  width: 60%;
+  margin: 10px auto;
+  margin-bottom: 40px;
+  font-size: 1.5vmax;
+}
+
+#socioLinks {
+  z-index: 2;
+  position: fixed;
+  bottom: 30%;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+#socioLinks i {
+  font-size: 30px;
+  margin: 0 10px;
+  cursor: pointer;
+  transition: 0.5s ease;
+}
+
+#socioLinks i:hover {
+  transform: scale(1.3);
+  color: var(--xcolor);
+}
+
+/* ------------------------------------------------------------------ */
+
+/* ----------------------RESPONSIVE--------------------------------- */
+
+@media screen and (max-width: 500px) {
+  .navbar {
+    height: 60px;
+  }
+  .logo {
+    margin-left: 20px;
+    font-size: 3.5vmax;
+  }
+  .navlinks {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 3vmax;
+    list-style: none;
+    position: absolute;
+    top: -92vh;
+    /* 		bottom: 0; */
+    right: 0;
+    background: #242324;
+    width: 100%;
+    height: 92vh;
+    transition: 0.6s linear;
+    border-radius: 0 0 50% 50%;
+    /* 		z-index: 6; */
+  }
+
+  .navlinks li:nth-child(1) {
+    margin-top: 60px;
+  }
+  .navlinks li {
+    margin: 30px 0;
+  }
+
+  .menu-bar {
+    display: flex;
+    transition: 0.6s linear;
+  }
+  .main img {
+    display: none;
+  }
+
+  .intro {
+    margin-top: 50px;
+  }
+  .intro-job {
+    font-size: 3.5vmax;
+  }
+
+  .intro-content {
+    font-size: 3.5vmax;
+    width: 300px;
+    height: 140px;
+  }
+  .main button {
+    padding: 8px 20px;
+    font-size: 2.5vmax;
+    height: 60px;
+  }
+
+  .img-div {
+    display: none;
+  }
+
+  .about-content {
+    width: 90%;
+    height: 60%;
+    top: 0%;
+    left: 10%;
+    justify-content: space-evenly;
+  }
+  .about-content h1 {
+    font-size: 6.5vmax;
+  }
+  .about-content p {
+    font-size: 2vmax;
+    width: 100%;
+  }
+
+  .services {
+    height: 130vh;
+  }
+
+  .service-heading {
+    font-size: 5.5vmax;
+    margin-top: 50px;
+  }
+
+  .service-cards {
+    flex-direction: column;
+    align-items: center;
+  }
+  .service-card h4 {
+    margin-top: 10px;
+    font-size: 3.5vmax;
+  }
+
+  .service-card {
+    padding: 10px;
+    padding-left: 20px;
+    margin: 20px 0;
+    width: 30vmax;
+    height: 30vmax;
+  }
+  .service-card p {
+    margin-top: 10px;
+    font-size: 2.5vmax;
+  }
+
+  .work {
+    height: 130vh;
+  }
+
+  .work h1 {
+    font-size: 5.5vmax;
+    margin-top: 50px;
+  }
+
+  .work-cards {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+  }
+
+  .work-card {
+    margin: 20px 0;
+    width: 30vmax;
+    height: 30vmax;
+  }
+  .work-card-content h4 {
+    font-size: 3.5vmax;
+  }
+  .work-card-content p {
+    font-size: 2.5vmax;
+  }
+
+  #submit {
+    margin-top: 0;
+    padding: 8 10px;
+    font-size: 2.6vmax;
+    height: 60px;
+  }
+
+  .formSection {
+    width: 80%;
+  }
+
+  .formSection form input {
+    font-size: 2.2vmax;
+  }
+
+  .contact h1 {
+    font-size: 5.5vmax;
+    margin-top: 80px;
+  }
+
+  .detailsBox {
+    flex-direction: column;
+    align-items: center;
+    height: 180px;
+    margin-bottom: 0;
+    margin-top: 0;
+  }
+
+  .details {
+    font-size: 2vmax;
+  }
+  #socioLinks {
+    z-index: 2;
+    position: relative;
+    bottom: 10px;
+    display: flex;
+    flex-direction: row;
   }
 }
