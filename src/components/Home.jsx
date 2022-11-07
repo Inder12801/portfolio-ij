@@ -60,7 +60,9 @@ const Home = () => {
             Download CV
           </button>
         </div>
-        <img src={bg1} alt="image" />
+        <div className="imageDiv">
+          <img src={bg1} alt="image" />
+        </div>
       </div>
     </div>
   );
