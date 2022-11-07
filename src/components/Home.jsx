@@ -10,7 +10,10 @@ const Home = () => {
       <div className="bar"></div>
       <div className="bar"></div>
       <nav className="navbar">
-        <div className="logo">Inderjeet</div>
+        <div className="logo">
+          Inderjeet
+          <div className="line"></div>
+        </div>
 
         <ul className="navlinks">
           <li>
@@ -62,6 +65,7 @@ const Home = () => {
         </div>
         <div className="imageDiv">
           <img src={bg1} alt="image" />
+          <div></div>
         </div>
       </div>
     </div>
