@@ -1,8 +1,12 @@
-import React from "react";
+import React, { useRef } from "react";
 import bg1 from "../img/bg1.png";
 import { TypeAnimation } from "react-type-animation";
 
 const Home = () => {
+  // const [navlinks] = useRef();
+  const handleMenu = () => {
+    // alert(navlinks);
+  };
   const str = "Hi, I am \nInderjeet";
   return (
     <div className="homepage" id="home">
@@ -33,7 +37,7 @@ const Home = () => {
           </li>
         </ul>
         {/* < 			<i className="fa-sharp fa-solid fa-bars"></i> */}
-        <span className="menu-bar">
+        <span className="menu-bar" onClick={handleMenu}>
           <i className="fa-solid fa-angle-down"></i>
         </span>
       </nav>
