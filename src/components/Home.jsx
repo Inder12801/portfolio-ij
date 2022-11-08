@@ -28,10 +28,10 @@ const Home = () => {
         </div>
 
         <ul
-          className="navlinks"
           style={{
             transform: `${state ? "translateY(100%)" : "translateY(-100%)"}`,
           }}
+          className="navlinks"
         >
           <li className="pulser">
             <a href="#home">Home</a>
