@@ -11,8 +11,9 @@ const Home = () => {
         setState(!state);
       }, 600);
     } else {
-      setTimeout(() => {}, 150);
-      setState(!state);
+      setTimeout(() => {
+        setState(!state);
+      }, 150);
     }
   };
   const str = "Hi, I am \nInderjeet";

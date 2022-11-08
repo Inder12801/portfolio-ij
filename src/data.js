@@ -35,4 +35,25 @@ export const workData = [
     image:
       "https://images.pexels.com/photos/7213436/pexels-photo-7213436.jpeg?auto=compress&cs=tinysrgb&w=600",
   },
+  {
+    name: "To-Do-App",
+    description: "Lorem ipsum dolor sit amet consectetur",
+    link: "https://replit.com/@InderjeetSing12/To-Do-App",
+    image:
+      "https://images.pexels.com/photos/7213436/pexels-photo-7213436.jpeg?auto=compress&cs=tinysrgb&w=600",
+  },
+  {
+    name: "To-Do-App",
+    description: "Lorem ipsum dolor sit amet consectetur",
+    link: "https://replit.com/@InderjeetSing12/To-Do-App",
+    image:
+      "https://images.pexels.com/photos/7213436/pexels-photo-7213436.jpeg?auto=compress&cs=tinysrgb&w=600",
+  },
+  {
+    name: "To-Do-App",
+    description: "Lorem ipsum dolor sit amet consectetur",
+    link: "https://replit.com/@InderjeetSing12/To-Do-App",
+    image:
+      "https://images.pexels.com/photos/7213436/pexels-photo-7213436.jpeg?auto=compress&cs=tinysrgb&w=600",
+  },
 ];
