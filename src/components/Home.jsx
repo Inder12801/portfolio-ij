@@ -1,11 +1,19 @@
-import React, { useRef } from "react";
+import React, { useRef, useState } from "react";
 import bg1 from "../img/bg1.png";
 import { TypeAnimation } from "react-type-animation";
 
 const Home = () => {
   // const [navlinks] = useRef();
+  const [state, setState] = useState(false);
   const handleMenu = () => {
-    // alert(navlinks);
+    if (state) {
+      setTimeout(() => {
+        setState(!state);
+      }, 600);
+    } else {
+      setTimeout(() => {}, 150);
+      setState(!state);
+    }
   };
   const str = "Hi, I am \nInderjeet";
   return (
@@ -19,7 +27,12 @@ const Home = () => {
           <div className="line"></div>
         </div>
 
-        <ul className="navlinks">
+        <ul
+          className="navlinks"
+          style={{
+            transform: `${state ? "translateY(100%)" : "translateY(-100%)"}`,
+          }}
+        >
           <li className="pulser">
             <a href="#home">Home</a>
           </li>
@@ -38,7 +51,11 @@ const Home = () => {
         </ul>
         {/* < 			<i className="fa-sharp fa-solid fa-bars"></i> */}
         <span className="menu-bar" onClick={handleMenu}>
-          <i className="fa-solid fa-angle-down"></i>
+          {state ? (
+            <i class="fa-solid fa-angle-up"></i>
+          ) : (
+            <i class="fa-solid fa-angle-down"></i>
+          )}
         </span>
       </nav>
       <div className="main">
@@ -64,7 +81,12 @@ const Home = () => {
             {/* Hi, I am <br /> <span>Inderjeet</span> */}
           </p>
           <button id="download" className="btn">
-            Download CV
+            <a
+              href="/src/assets/Training Guidelines - CSE Department .pdf"
+              download={"Resume.pdf"}
+            >
+              Download CV
+            </a>
           </button>
         </div>
         <div className="imageDiv">
@@ -72,6 +94,11 @@ const Home = () => {
           <div></div>
         </div>
       </div>
+      <a href="#home">
+        <button className="toTop">
+          <i class="fa-solid fa-caret-up"></i>
+        </button>
+      </a>
     </div>
   );
 };

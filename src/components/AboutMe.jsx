@@ -12,14 +12,16 @@ const AboutMe = () => {
       </div> */}
       <div className="about-content">
         <h1>About Me</h1>
+        <div className="about-avatar">
+          <img src="https://cdn-icons-png.flaticon.com/512/147/147144.png" />
+        </div>
         <p className="about-content-desc">
-          Hi, my name is Aayush .
-          I am a undergraduate Btech(IT) student. 
-          I am a front-end developer who loves to work on ReactJS-based projects.
-          I am a learner that values growth and determination.
-          I have mentioned below my skills learnt till now.
-          I have also made some projects using my skills out which the best ones are showcased below.
-          I am interested and open to interview as a Front-end developer.
+          Hi, my name is Aayush . I am a undergraduate Btech(IT) student. I am a
+          front-end developer who loves to work on ReactJS-based projects. I am
+          a learner that values growth and determination. I have mentioned below
+          my skills learnt till now. I have also made some projects using my
+          skills out which the best ones are showcased below. I am interested
+          and open to interview as a Front-end developer.
         </p>
 
         {/* <div className="SEE-section">
@@ -37,7 +39,7 @@ const AboutMe = () => {
             <p>Lorem ipsum dolor sit amet.</p>
           </div> */}
 
-          {/*  <div className = "education details">
+        {/*  <div className = "education details">
 					<h3>2020</h3>
 					<p>Lorem ipsum dolor sit amet.</p>
 					<h3>2020-Present</h3>
@@ -49,8 +51,6 @@ const AboutMe = () => {
 					<h3>2022-current</h3>
 					<p>Lorem ipsum dolor sit amet.</p>
 				</div>  */}
-
-        
       </div>
     </div>
   );
