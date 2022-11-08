@@ -104,12 +104,12 @@ html {
   transition: all 0.5s linear;
   transform: rotateZ(-5deg);
   cursor: pointer;
-  background-color: var(--xcolor);
+  /* background-color: var(--xcolor); */
 }
 .logo:hover {
   color: var(--xcolor);
   text-shadow: 1px 1px #ffffff;
-  background-color: #ffffff;
+  /* background-color: #ffffff; */
 }
 
 .navlinks {
