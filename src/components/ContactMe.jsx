@@ -6,17 +6,17 @@ const ContactMe = () => {
       <h1>Contact Me</h1>
       <div className="contact-container">
         <div className="formSection">
-          <form action="">
-            <input type="text" placeholder="Enter Your Name" required />
-            <input type="email" placeholder="Enter Your Email" />
+          <form action="https://formspree.io/f/mnqrljll" method="POST">
+            <input name="username" type="text" placeholder="Enter Your Name" required autoComplete="off"/>
+            <input name='email' type="email" placeholder="Enter Your Email" required autoComplete="off"/>
             <textarea
-              name=""
-              id=""
+              name="message"
               cols="30"
               rows="5"
               placeholder="Enter Your Message"
+              required
             ></textarea>
-            <button id="submit" className="btn">
+            <button id="submit" className="btn" value={'send'}>
               Submit
             </button>
           </form>
