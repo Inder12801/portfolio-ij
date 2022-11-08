@@ -8,7 +8,7 @@ const ContactMe = () => {
         <div className="formSection">
           <form action="https://formspree.io/f/mnqrljll" method="POST">
             <input name="username" type="text" placeholder="Enter Your Name" required autoComplete="off"/>
-            <input name='email' type="email" placeholder="Enter Your Email" required autoComplete="off"/>
+            <input name='mail' type="email" placeholder="Enter Your Email" required autoComplete="off"/>
             <textarea
               name="message"
               cols="30"
