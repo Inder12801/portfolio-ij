@@ -20,14 +20,14 @@ const Home = () => {
         </div>
 
         <ul className="navlinks">
-          <li>
+          <li className="pulser">
             <a href="#home">Home</a>
           </li>
           <li>
             <a href="#aboutName">About</a>
           </li>
           <li>
-            <a href="#myServices">Services</a>
+            <a href="#skills">Skills</a>
           </li>
           <li>
             <a href="#myWork">Work</a>

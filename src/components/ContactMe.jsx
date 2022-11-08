@@ -7,8 +7,20 @@ const ContactMe = () => {
       <div className="contact-container">
         <div className="formSection">
           <form action="https://formspree.io/f/mnqrljll" method="POST">
-            <input name="username" type="text" placeholder="Enter Your Name" required autoComplete="off"/>
-            <input name='mail' type="email" placeholder="Enter Your Email" required autoComplete="off"/>
+            <input
+              name="username"
+              type="text"
+              placeholder="Enter Your Name"
+              required
+              autoComplete="off"
+            />
+            <input
+              name="mail"
+              type="email"
+              placeholder="Enter Your Email"
+              required
+              autoComplete="off"
+            />
             <textarea
               name="message"
               cols="30"
@@ -16,7 +28,7 @@ const ContactMe = () => {
               placeholder="Enter Your Message"
               required
             ></textarea>
-            <button id="submit" className="btn" value={'send'}>
+            <button id="submit" className="btn" value={"send"}>
               Submit
             </button>
           </form>
@@ -35,6 +47,7 @@ const ContactMe = () => {
             <i className="fa-brands fa-twitter"></i>
             <i className="fa-brands fa-instagram"></i>
             <i className="fa-brands fa-linkedin"></i>
+            <i class="fa-brands fa-github"></i>
           </div>
         </div>
       </div>
