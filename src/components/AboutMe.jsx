@@ -24,34 +24,6 @@ const AboutMe = () => {
           which the best ones are showcased below. I am interested and open to
           work as a Front-end developer.s
         </p>
-
-        {/* <div className="SEE-section">
-          <ul className="">
-            <li id="skills">Skills</li>
-            <li id="experience">Experience</li>
-            <li id="education">Education</li>
-          </ul>
-        </div>
-        <div className="see-deatils">
-          <div className="skill details">
-            <h3>Web Dev</h3>
-            <p>Lorem ipsum dolor sit amet.</p>
-            <h3>competitive programmer</h3>
-            <p>Lorem ipsum dolor sit amet.</p>
-          </div> */}
-
-        {/*  <div className = "education details">
-					<h3>2020</h3>
-					<p>Lorem ipsum dolor sit amet.</p>
-					<h3>2020-Present</h3>
-					<p>Lorem ipsum dolor sit amet.</p>
-				</div>
-				<div className = "experience details">
-					<h3>2021-2022</h3>
-					<p>Lorem ipsum dolor sit amet.</p>
-					<h3>2022-current</h3>
-					<p>Lorem ipsum dolor sit amet.</p>
-				</div>  */}
       </div>
     </div>
   );

@@ -3,7 +3,6 @@ import bg1 from "../img/bg1.png";
 import { TypeAnimation } from "react-type-animation";
 
 const Home = () => {
-  // const [navlinks] = useRef();
   const [state, setState] = useState(false);
   const handleMenu = () => {
     if (state) {
@@ -50,7 +49,7 @@ const Home = () => {
             <a href="#contact">Contact</a>
           </li>
         </ul>
-        {/* < 			<i className="fa-sharp fa-solid fa-bars"></i> */}
+
         <span className="menu-bar" onClick={handleMenu}>
           {state ? (
             <i class="fa-solid fa-angle-up"></i>
@@ -66,20 +65,12 @@ const Home = () => {
             <TypeAnimation
               speed={20}
               deletionSpeed={20}
-              sequence={[
-                str,
-                1000,
-                "",
-                () => {
-                  console.log("Done typing!"); // Place optional callbacks anywhere in the array
-                },
-              ]}
+              sequence={[str, 1000, ""]}
               wrapper="div"
               cursor={true}
               repeat={Infinity}
               style={{ fontSize: "2em" }}
             />
-            {/* Hi, I am <br /> <span>Inderjeet</span> */}
           </p>
           <button id="download" className="btn">
             <a

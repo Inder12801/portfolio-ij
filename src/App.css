@@ -161,7 +161,7 @@ html {
   left: 4px;
   background: var(--xcolor);
   border-radius: var(--default-br);
-  background-color: cyan;
+  background-color: var(--xcolor);
   z-index: -1;
 }
 .navlinks li:nth-child(5):hover::before {
@@ -221,11 +221,7 @@ a {
 }
 
 .intro {
-  /*   width: 35%; */
   height: 350px;
-  /*   left: 22%;
-  top: 35%;
-  position: relative; */
   margin-top: 50px;
   color: white;
 }
@@ -326,7 +322,6 @@ a {
   position: relative;
   width: 70%;
   bottom: 8%;
-  /* left: 36%; */
   align-items: center;
   margin: 0 auto;
 }
@@ -345,7 +340,7 @@ a {
   position: absolute;
   width: 0%;
   height: 3%;
-  background-color: cyan;
+  background-color: var(--xcolor);
   z-index: 1;
   bottom: 0;
 }
@@ -372,8 +367,6 @@ a {
 .about-content-desc {
   font-size: 1.5vmax;
   width: 70%;
-  /* display: flex; */
-  /* justify-content: flex-end; */
   text-align: justify;
   letter-spacing: 1px;
   line-height: 1.4;
@@ -444,9 +437,7 @@ a {
   justify-content: center;
   align-items: center;
   gap: 10px;
-  /* padding-top: 30px;
-  padding-left: 30px;
-  margin: 0 30px; */
+
   transition: all 0.5s ease;
   box-shadow: 0px 2px 5px 1px #000000a6;
 }
@@ -458,7 +449,7 @@ a {
   left: 0;
   width: 100%;
   height: 100%;
-  /* background: linear-gradient(45deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)); */
+
   background-color: #ec0101;
   border-radius: var(--default-br);
   z-index: -1;
@@ -482,7 +473,6 @@ a {
 }
 .skill-card:hover::before {
   z-index: 2;
-  /* opacity: 0.6; */
 }
 
 /* -------------------------SERVICE SECTION------------------------ */
@@ -552,7 +542,6 @@ a {
 
 .work {
   width: 100vw;
-  /* height: 100vh; */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -568,11 +557,9 @@ a {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  /* overflow-y: auto; */
   gap: 30px;
   width: 100%;
   margin-top: 50px;
-  /* padding: 0 60px; */
 }
 
 .work-card {
@@ -614,19 +601,11 @@ a {
 }
 
 .work-card-content button {
-  /* font-size: 30px; */
-  /* margin-left: 17%; */
   border: 2px solid;
   margin-top: 20px;
-  /* background-color: #ffffff; */
-  /* color: var(--xcolor); */
 }
 .work-card-content button:hover {
-  /* font-size: 30px; */
-  /* margin-left: 17%; */
-  /* background-color: #ffffff; */
   border: 2px solid;
-  /* color: var(--xcolor); */
 }
 
 .work-card i:hover {
@@ -634,9 +613,6 @@ a {
 }
 
 .work-card:hover {
-  /* background-repeat: no-repeat;
-  background-size: contain;
-  background-position: center; */
   box-shadow: 0px 2px 5px 1px #000000a6;
   opacity: 1;
 }
@@ -804,14 +780,12 @@ a {
     list-style: none;
     position: absolute;
     top: -92vh;
-    /* 		bottom: 0; */
     right: 0;
     background: linear-gradient(to right, #181b1e, #0d0d0d);
     width: 100%;
     height: 92vh;
     transition: 0.6s linear;
     border-radius: 0 0 50% 50%;
-    /* 		z-index: 6; */
   }
 
   .navlinks li:nth-child(1) {
@@ -862,7 +836,6 @@ a {
     width: 90%;
     height: 60%;
     top: 0%;
-    /* left: 10%; */
     justify-content: space-evenly;
     margin: 0 35px;
   }
@@ -921,10 +894,6 @@ a {
     font-size: 2.5vmax;
   }
 
-  .work {
-    /* height: 130vh; */
-  }
-
   .work h1 {
     font-size: 5.5vmax;
     margin-top: 50px;
@@ -954,10 +923,7 @@ a {
     border: 2px solid;
   }
   .work-card-content button:hover {
-    /* font-size: 30px; */
-    /* background-color: #ffffff; */
     border: 2px solid;
-    /* color: var(--xcolor); */
   }
 
   #submit {
