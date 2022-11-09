@@ -571,7 +571,6 @@ a {
   /* overflow-y: auto; */
   gap: 30px;
   width: 100%;
-
   margin-top: 50px;
   /* padding: 0 60px; */
 }
@@ -581,10 +580,13 @@ a {
   border-radius: var(--default-br);
   width: 20vmax;
   height: 20vmax;
-  padding-left: 30px;
   margin: 30px;
   box-shadow: 0px 2px 5px 1px #000000a6;
   transition: 0.5s ease;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  z-index: 2;
 }
 
 .work-card-content {
@@ -592,31 +594,16 @@ a {
   height: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
+  justify-content: center;
+  gap: 20px;
+  align-items: center;
+  text-align: center;
   display: none;
   transition: 0.5s ease;
   position: relative;
   z-index: -1;
-}
-
-.work-card:nth-child(1) {
-  background-image: url("https://static.vecteezy.com/system/resources/previews/009/773/549/original/tic-tac-toe-set-children-game-strategy-illustration-on-white-background-vector.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: 100% 100%;
-}
-
-.work-card:nth-child(2) {
-  background-image: url("https://www.researchgate.net/publication/303597105/figure/fig1/AS:367253058015232@1464571360766/Screenshot-of-the-whack-a-mole-game.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: 100% 100%;
-}
-.work-card:nth-child(3) {
-  background-image: url("https://images.pexels.com/photos/7213436/pexels-photo-7213436.jpeg?auto=compress&cs=tinysrgb&w=600");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: 100% 100%;
+  background-color: var(--xcolor);
+  border-radius: var(--default-br);
 }
 
 .work-card-content h4 {
@@ -628,14 +615,15 @@ a {
 
 .work-card-content button {
   /* font-size: 30px; */
-  margin-left: 17%;
+  /* margin-left: 17%; */
   border: 2px solid;
+  margin-top: 20px;
   /* background-color: #ffffff; */
   /* color: var(--xcolor); */
 }
 .work-card-content button:hover {
   /* font-size: 30px; */
-  margin-left: 17%;
+  /* margin-left: 17%; */
   /* background-color: #ffffff; */
   border: 2px solid;
   /* color: var(--xcolor); */
@@ -646,13 +634,14 @@ a {
 }
 
 .work-card:hover {
+  /* background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center; */
   box-shadow: 0px 2px 5px 1px #000000a6;
-  background-color: var(--xcolor);
-  background: var(--xcolor);
   opacity: 1;
 }
 .work-card:hover .work-card-content {
-  z-index: 1;
+  z-index: 3;
   display: flex;
 }
 
@@ -949,6 +938,7 @@ a {
 
   .work-card {
     margin: 20px 0;
+    padding: 10px;
     width: 30vmax;
     height: 30vmax;
   }
@@ -961,14 +951,10 @@ a {
   .work-card-content button {
     font-size: 1.5vmax;
     padding: 10px 30px;
-    margin-left: 17%;
     border: 2px solid;
-    /* background-color: #ffffff; */
-    /* color: var(--xcolor); */
   }
   .work-card-content button:hover {
     /* font-size: 30px; */
-    margin-left: 17%;
     /* background-color: #ffffff; */
     border: 2px solid;
     /* color: var(--xcolor); */

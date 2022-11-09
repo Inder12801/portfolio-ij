@@ -4,6 +4,7 @@ import js from "../src/img/js.png";
 import reatjs from "../src/img/reactjs.png";
 import github from "../src/img/github.png";
 import chakra from "../src/img/chakra.png";
+import coinbash from "../src/img/coinbash.jpg";
 export const skillsData = [
   { image: html, name: "HTML 5" },
   { image: css, name: "CSS 3" },
@@ -36,11 +37,10 @@ export const workData = [
       "https://images.pexels.com/photos/7213436/pexels-photo-7213436.jpeg?auto=compress&cs=tinysrgb&w=600",
   },
   {
-    name: "To-Do-App",
+    name: "Coinbash",
     description: "Lorem ipsum dolor sit amet consectetur",
     link: "https://replit.com/@InderjeetSing12/To-Do-App",
-    image:
-      "https://images.pexels.com/photos/7213436/pexels-photo-7213436.jpeg?auto=compress&cs=tinysrgb&w=600",
+    image: coinbash,
   },
   {
     name: "To-Do-App",
