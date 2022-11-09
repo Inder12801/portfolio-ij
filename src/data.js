@@ -48,7 +48,7 @@ export const workData = [
 
   {
     name: "Multi Page Web Design",
-    description: "Lorem ipsum dolor sit amet consectetur",
+    description: "A web design using pure HTML & CSS",
     link: "https://eduford-web-design.netlify.app/",
     image: multi,
     gitLink: "https://github.com/Inder12801/Multi-page-design",

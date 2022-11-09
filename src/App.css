@@ -2,10 +2,15 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 
 @import url("https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Dancing+Script:wght@600&family=Great+Vibes&family=Marck+Script&family=Mea+Culpa&family=Monoton&family=Overpass&family=Pacifico&family=Parisienne&family=Raleway&family=Rubik+Bubbles&family=Rubik:wght@400;800;900&family=Satisfy&family=Signika+Negative&display=swap");
-
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 body {
   width: 100vw;
   color: white;
+  background: transparent;
 }
 
 html {
@@ -13,11 +18,7 @@ html {
   background: linear-gradient(to right, #1e2226, #101111);
 }
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
+
 :root {
   --xcolor: #ec0101;
   /* --xcolor: #26f05f; */
@@ -866,6 +867,11 @@ a {
     width: 16vmax;
     height: 16vmax;
   }
+
+  .skill-card h4{
+    font-size: 2vmax;
+  }
+
   .skill-card img {
     width: 35px;
   }
@@ -962,11 +968,11 @@ a {
     align-items: center;
     height: 180px;
     margin-bottom: 0;
-    margin-top: 0;
+    margin-top: 40px;
   }
 
   .details {
-    font-size: 2vmax;
+    font-size: 2.5vmax;
   }
   #socioLinks {
     z-index: 2;
