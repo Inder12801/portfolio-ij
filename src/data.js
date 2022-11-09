@@ -16,29 +16,8 @@ export const skillsData = [
 
 export const workData = [
   {
-    name: "Tic Tac Toe",
-    description: "Lorem ipsum dolor sit amet consectetur",
-    link: "https://replit.com/@InderjeetSing12/Tic-Tac-Toe-Game",
-    image:
-      "https://static.vecteezy.com/system/resources/previews/009/773/549/original/tic-tac-toe-set-children-game-strategy-illustration-on-white-background-vector.jpg",
-  },
-  {
-    name: "Mole-In-A-Hole",
-    description: "Lorem ipsum dolor sit amet consectetur",
-    link: "https://replit.com/@InderjeetSing12/Mole-In-A-Hole",
-    image:
-      "https://www.researchgate.net/publication/303597105/figure/fig1/AS:367253058015232@1464571360766/Screenshot-of-the-whack-a-mole-game.png",
-  },
-  {
-    name: "To-Do-App",
-    description: "Lorem ipsum dolor sit amet consectetur",
-    link: "https://replit.com/@InderjeetSing12/To-Do-App",
-    image:
-      "https://images.pexels.com/photos/7213436/pexels-photo-7213436.jpeg?auto=compress&cs=tinysrgb&w=600",
-  },
-  {
-    name: "Coinbash",
-    description: "Lorem ipsum dolor sit amet consectetur",
+    name: "Coin Bash",
+    description: "One stop for all latest crypto tracking and crpto news!",
     link: "https://replit.com/@InderjeetSing12/To-Do-App",
     image: coinbash,
   },
@@ -47,13 +26,31 @@ export const workData = [
     description: "Lorem ipsum dolor sit amet consectetur",
     link: "https://replit.com/@InderjeetSing12/To-Do-App",
     image:
-      "https://images.pexels.com/photos/7213436/pexels-photo-7213436.jpeg?auto=compress&cs=tinysrgb&w=600",
+      "https://clickup.com/blog/wp-content/uploads/2019/01/to-do-list-apps.png",
+    gitLink: "https://github.com/Inder12801/To-Do-App",
   },
   {
-    name: "To-Do-App",
+    name: "Mole-In-A-Hole",
+    description: "Catch that little mole and increase your score!",
+    link: "https://replit.com/@InderjeetSing12/Mole-In-A-Hole",
+    image:
+      "https://ih1.redbubble.net/image.2497123520.7699/mo,small,flatlay,product_square,600x600.jpg",
+    gitLink: "https://github.com/Inder12801/Mole-In-A-Hole",
+  },
+  {
+    name: "Tic Tac Toe",
+    description: "Our childhood fun game with cool UI",
+    link: "https://replit.com/@InderjeetSing12/Tic-Tac-Toe-Game",
+    image: "https://helloacm.com/wp-content/uploads/2019/07/tic-tac-toe.png",
+    gitLink: "https://github.com/Inder12801/Tic-Tac-Toe-Game",
+  },
+
+  {
+    name: "Multi Page Web Design",
     description: "Lorem ipsum dolor sit amet consectetur",
     link: "https://replit.com/@InderjeetSing12/To-Do-App",
     image:
-      "https://images.pexels.com/photos/7213436/pexels-photo-7213436.jpeg?auto=compress&cs=tinysrgb&w=600",
+      "https://cdn.pixabay.com/photo/2016/08/20/06/44/e-commerce-1606962_1280.png",
+    gitLink: "https://github.com/Inder12801/Multi-page-design",
   },
 ];

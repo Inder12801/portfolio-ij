@@ -1,7 +1,7 @@
 import React from "react";
 import coinbash from "../img/coinbash.jpg";
 
-const WorkCard = ({ name, link, description, image }) => {
+const WorkCard = ({ name, link, description, image, gitLink }) => {
   return (
     <div
       className="work-card"
@@ -13,7 +13,10 @@ const WorkCard = ({ name, link, description, image }) => {
         <h4>{name}</h4>
         <p>{description}</p>
         <a href={link} target="_blanc">
-          <button className="btn">Go to</button>
+          <button className="btn">Website</button>
+        </a>
+        <a href={gitLink} target="_blanc">
+          <i class="fa-brands fa-github" style={{ fontSize: "25px" }}></i>
         </a>
       </div>
     </div>

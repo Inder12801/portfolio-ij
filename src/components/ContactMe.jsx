@@ -43,11 +43,28 @@ const ContactMe = () => {
             <span>+91-8700649024</span>
           </div>
           <div id="socioLinks">
-            <i className="fa-brands fa-facebook"></i>
-            <i className="fa-brands fa-twitter"></i>
-            <i className="fa-brands fa-instagram"></i>
-            <i className="fa-brands fa-linkedin"></i>
-            <i class="fa-brands fa-github"></i>
+            {/* <i className="fa-brands fa-facebook"></i> */}
+            <a
+              href="https://twitter.com/Inder12801?t=55lE8AMbouzVORjl7PAPug&s=09"
+              target="_blanc"
+            >
+              <i className="fa-brands fa-twitter"></i>
+            </a>
+            <a
+              href="https://www.instagram.com/ij.singh_/?hl=en"
+              target="_blanc"
+            >
+              <i className="fa-brands fa-instagram"></i>
+            </a>
+            <a
+              href="https://www.linkedin.com/in/inderjeet-singh-613a44203/"
+              target="_blanc"
+            >
+              <i className="fa-brands fa-linkedin"></i>
+            </a>
+            <a href="https://github.com/Inder12801" target="_blanc">
+              <i class="fa-brands fa-github"></i>
+            </a>
           </div>
         </div>
       </div>
