@@ -5,6 +5,7 @@ import reatjs from "../src/img/reactjs.png";
 import github from "../src/img/github.png";
 import chakra from "../src/img/chakra.png";
 import coinbash from "../src/img/coinbash.jpg";
+import multi from "../src/img/black-multi.png";
 export const skillsData = [
   { image: html, name: "HTML 5" },
   { image: css, name: "CSS 3" },
@@ -18,13 +19,13 @@ export const workData = [
   {
     name: "Coin Bash",
     description: "One stop for all latest crypto tracking and crpto news!",
-    link: "https://replit.com/@InderjeetSing12/To-Do-App",
+    link: "https://coinbash.netlify.app/",
     image: coinbash,
   },
   {
     name: "To-Do-App",
-    description: "Lorem ipsum dolor sit amet consectetur",
-    link: "https://replit.com/@InderjeetSing12/To-Do-App",
+    description: "A daily to do planner app made using ReactJs",
+    link: "https://to-do-planener-app.netlify.app/",
     image:
       "https://clickup.com/blog/wp-content/uploads/2019/01/to-do-list-apps.png",
     gitLink: "https://github.com/Inder12801/To-Do-App",
@@ -32,7 +33,7 @@ export const workData = [
   {
     name: "Mole-In-A-Hole",
     description: "Catch that little mole and increase your score!",
-    link: "https://replit.com/@InderjeetSing12/Mole-In-A-Hole",
+    link: "https://mole-in-a-hole.netlify.app/",
     image:
       "https://ih1.redbubble.net/image.2497123520.7699/mo,small,flatlay,product_square,600x600.jpg",
     gitLink: "https://github.com/Inder12801/Mole-In-A-Hole",
@@ -40,7 +41,7 @@ export const workData = [
   {
     name: "Tic Tac Toe",
     description: "Our childhood fun game with cool UI",
-    link: "https://replit.com/@InderjeetSing12/Tic-Tac-Toe-Game",
+    link: "https://tick-tac-toe-play.netlify.app/",
     image: "https://helloacm.com/wp-content/uploads/2019/07/tic-tac-toe.png",
     gitLink: "https://github.com/Inder12801/Tic-Tac-Toe-Game",
   },
@@ -48,9 +49,8 @@ export const workData = [
   {
     name: "Multi Page Web Design",
     description: "Lorem ipsum dolor sit amet consectetur",
-    link: "https://replit.com/@InderjeetSing12/To-Do-App",
-    image:
-      "https://cdn.pixabay.com/photo/2016/08/20/06/44/e-commerce-1606962_1280.png",
+    link: "https://eduford-web-design.netlify.app/",
+    image: multi,
     gitLink: "https://github.com/Inder12801/Multi-page-design",
   },
 ];
