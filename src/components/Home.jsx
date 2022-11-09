@@ -15,7 +15,7 @@ const Home = () => {
       }, 150);
     }
   };
-  const str = "Hi, I am \nInderjeet";
+  const str = "Web Developer";
   return (
     <div className="homepage" id="home">
       <div className="bar"></div>
@@ -60,17 +60,17 @@ const Home = () => {
       </nav>
       <div className="main">
         <div className="intro">
-          <p className="intro-job">Web Developer</p>
-          <p className="intro-content">
-            <TypeAnimation
+          <p className="intro-job"><TypeAnimation
               speed={20}
               deletionSpeed={20}
               sequence={[str, 1000, ""]}
               wrapper="div"
               cursor={true}
               repeat={Infinity}
-              style={{ fontSize: "2em" }}
-            />
+              className = 'typingAnimation'
+            /></p>
+          <p className="intro-content">
+          Hi, I am <br/><span>Inderjeet</span>
           </p>
           <button id="download" className="btn">
             <a
