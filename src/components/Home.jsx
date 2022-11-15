@@ -1,19 +1,12 @@
 import React, { useRef, useState } from "react";
-import bg1 from "../img/bg1.png";
+import profile from "../img/profile1-outlined-1.png";
 import { TypeAnimation } from "react-type-animation";
 
 const Home = () => {
   const [state, setState] = useState(false);
+
   const handleMenu = () => {
-    if (state) {
-      setTimeout(() => {
-        setState(!state);
-      }, 600);
-    } else {
-      setTimeout(() => {
-        setState(!state);
-      }, 150);
-    }
+    setState(!state);
   };
   const str = "Web Developer";
   return (
@@ -45,7 +38,7 @@ const Home = () => {
           <li>
             <a href="#myWork">Work</a>
           </li>
-          <li>
+          <li onClick={handleMenu}>
             <a href="#contact">Contact</a>
           </li>
         </ul>
@@ -60,17 +53,20 @@ const Home = () => {
       </nav>
       <div className="main">
         <div className="intro">
-          <p className="intro-job"><TypeAnimation
+          <p className="intro-job">
+            <TypeAnimation
               speed={20}
               deletionSpeed={20}
               sequence={[str, 1000, ""]}
               wrapper="div"
               cursor={true}
               repeat={Infinity}
-              className = 'typingAnimation'
-            /></p>
+              className="typingAnimation"
+            />
+          </p>
           <p className="intro-content">
-          Hi, I am <br/><span>Inderjeet</span>
+            Hi, I am <br />
+            <span>Inderjeet</span>
           </p>
           <button id="download" className="btn">
             <a
@@ -82,7 +78,7 @@ const Home = () => {
           </button>
         </div>
         <div className="imageDiv">
-          <img src={bg1} alt="image" />
+          <img src={profile} alt="image" />
           <div></div>
         </div>
       </div>

@@ -6,7 +6,7 @@ import WorkCard from "./WorkCard";
 const Work = () => {
   return (
     <div className="work" id="myWork">
-      <h1>My Work</h1>
+      <h1 className="downline">My Work</h1>
       <div className="work-cards">
         {workData.map((item) => (
           <WorkCard {...item} />

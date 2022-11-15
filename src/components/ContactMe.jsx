@@ -3,7 +3,7 @@ import React from "react";
 const ContactMe = () => {
   return (
     <div className="contact" id="contact">
-      <h1>Contact Me</h1>
+      <h1 className="downline">Contact Me</h1>
       <div className="contact-container">
         <div className="formSection">
           <form action="https://formspree.io/f/xknekkoe" method="POST">

@@ -18,7 +18,6 @@ html {
   background: linear-gradient(to right, #1e2226, #101111);
 }
 
-
 :root {
   --xcolor: #ec0101;
   /* --xcolor: #26f05f; */
@@ -162,7 +161,6 @@ html {
   z-index: -1;
 }
 
-
 @keyframes pulse {
   0% {
     opacity: 0;
@@ -175,7 +173,7 @@ html {
 
 a {
   color: white;
-  text-decoration: none;  
+  text-decoration: none;
 }
 
 .menu-bar {
@@ -217,7 +215,7 @@ a {
   color: white;
 }
 
-.intro button{
+.intro button {
   margin-top: 20px;
 }
 
@@ -225,9 +223,7 @@ a {
   font-size: 3.5vmax;
 } */
 
-
-
-.typingAnimation{
+.typingAnimation {
   font-size: 2.2vmax;
 }
 
@@ -240,13 +236,37 @@ a {
   color: var(--xcolor);
   font-size: 4vmax;
 }
+
+.imageDiv {
+  position: relative;
+  top: -30px;
+  width: 25vw;
+  height: 25vw;
+  object-fit: contain;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  background: linear-gradient(to left, #3e3e3e, #1d1d1d);
+  border-radius: 100%;
+  border: 6px solid whitesmoke;
+}
+
+/* .imageDiv div {
+  content: "";
+  position: absolute;
+  background-color: rgb(211, 208, 214);
+  width: 25vw;
+  height: 25vw;
+  top: -7px;
+  border-radius: 100%;
+  z-index: -1;
+} */
 .imageDiv img {
-  width: 250px;
-  height: 300px;
+  width: 100%;
   z-index: 3;
 }
 
-.imageDiv div {
+/* .imageDiv div {
   width: 350px;
   height: 350px;
   position: absolute;
@@ -254,7 +274,7 @@ a {
   left: 57%;
   background: linear-gradient(45deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
   border-radius: 50%;
-}
+} */
 
 .btn {
   height: 50px;
@@ -334,22 +354,6 @@ a {
   z-index: 2;
 }
 
-.about-content h1::before {
-  content: "";
-  position: absolute;
-  width: 0%;
-  height: 3%;
-  background-color: var(--xcolor);
-  z-index: 1;
-  bottom: 0;
-}
-
-.about-content h1:hover::before {
-  animation: anim 1s infinite alternate;
-  opacity: 1;
-  z-index: 1;
-  transform: translateY(100%);
-}
 @keyframes anim {
   0% {
     width: 0%;
@@ -357,10 +361,6 @@ a {
   100% {
     width: 100%;
   }
-}
-
-.about-content h1:hover {
-  text-shadow: 2px 2px #ec0101;
 }
 
 .about-content-desc {
@@ -436,9 +436,9 @@ a {
   justify-content: center;
   align-items: center;
   gap: 10px;
-
   transition: all 0.5s ease;
   box-shadow: 0px 2px 5px 1px #000000a6;
+  animation: skillCard 0.5s infinite;
 }
 
 .skill-card::before {
@@ -448,7 +448,6 @@ a {
   left: 0;
   width: 100%;
   height: 100%;
-
   background-color: #ec0101;
   border-radius: var(--default-br);
   z-index: -1;
@@ -655,7 +654,7 @@ a {
 }
 
 .formSection {
-  width: 35%;
+  width: 45%;
   margin: 0 40px;
 }
 
@@ -667,13 +666,23 @@ a {
 .formSection input {
   width: 100%;
   margin-bottom: 4%;
-  font-size: 1.3vmax;
+  font-size: 1.4vmax;
   padding: 10px;
   background: #242324;
   border: none;
   color: white;
   border-radius: 2px;
   font-family: "Barlow", sans-serif;
+  border-left: 5px solid transparent;
+
+  outline: none;
+}
+.formSection input:focus {
+  border-left: 5px solid var(--xcolor);
+}
+
+.formSection input::placeholder {
+  color: #a1a1a1;
 }
 
 .formSection textarea {
@@ -686,10 +695,18 @@ a {
   color: white;
   border-radius: 2px;
   font-family: "Barlow", sans-serif;
+  border-left: 5px solid transparent;
+  outline: none;
+}
+.formSection textarea:focus {
+  border-left: 5px solid var(--xcolor);
+}
+.formSection textarea::placeholder {
+  color: #a1a1a1;
 }
 
 .formSection form button {
-  width: 50%;
+  width: 45%;
   margin: 30px auto;
 }
 
@@ -762,13 +779,33 @@ a {
   opacity: 0.4;
 }
 
+.downline {
+  position: relative;
+  padding-bottom: 2px;
+}
+.downline::before {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 3%;
+  background-color: var(--xcolor);
+  z-index: 1;
+  bottom: 0;
+}
+.downline:hover::before {
+  animation: anim 1s infinite alternate;
+  opacity: 1;
+  z-index: 1;
+  transform: translateY(100%);
+}
+
 /* ------------------------------------------------------------------ */
 
 /* ----------------------RESPONSIVE--------------------------------- */
 
 @media screen and (max-width: 500px) {
-  a{
-    text-decoration : none;
+  a {
+    text-decoration: none;
   }
   .navbar {
     height: 60px;
@@ -805,11 +842,12 @@ a {
     display: flex;
     transition: 0.6s linear;
   }
+
   .main img {
     display: none;
   }
 
-  .imageDiv div {
+  .imageDiv {
     display: none;
     width: 0;
     height: 0;
@@ -836,7 +874,7 @@ a {
   }
 
   .img-div {
-    display: none;
+    /* display: none; */
   }
 
   .about-content {
@@ -868,7 +906,7 @@ a {
     height: 16vmax;
   }
 
-  .skill-card h4{
+  .skill-card h4 {
     font-size: 2vmax;
   }
 
@@ -922,7 +960,7 @@ a {
     width: 30vmax;
     height: 30vmax;
   }
-  .work-card-content{
+  .work-card-content {
     width: 100%;
     height: 100%;
   }
@@ -938,7 +976,6 @@ a {
     border: 2px solid;
   }
 
-  
   .work-card-content button:hover {
     border: 2px solid;
   }

@@ -1,5 +1,5 @@
 import React from "react";
-import bg2 from "../img/bg2.png";
+import profile2 from "../img/profile-pic.png";
 
 const AboutMe = () => {
   return (
@@ -11,9 +11,9 @@ const AboutMe = () => {
         <img src={bg2}></img>
       </div> */}
       <div className="about-content">
-        <h1>About Me</h1>
+        <h1 className="downline">About Me</h1>
         <div className="about-avatar">
-          <img src="https://cdn-icons-png.flaticon.com/512/147/147144.png" />
+          <img src={profile2} />
         </div>
         <p className="about-content-desc">
           Hi, my name is <span style={{ color: "cyan" }}>Inderjeet Singh</span>{" "}
