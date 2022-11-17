@@ -22,7 +22,7 @@ const AboutMe = () => {
           values growth and determination. I have mentioned below my skills
           learnt till now. I have also made some projects using my skills out
           which the best ones are showcased below. I am interested and open to
-          work as a Front-end developer.s
+          work as a Front-end developer.
         </p>
       </div>
     </div>

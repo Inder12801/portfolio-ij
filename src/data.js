@@ -4,7 +4,7 @@ import js from "../src/img/js.png";
 import reatjs from "../src/img/reactjs.png";
 import github from "../src/img/github.png";
 import chakra from "../src/img/chakra.png";
-import coinbash from "../src/img/coinbash.jpg";
+import coinbash from "../src/img/COINBASH-LOGO.png";
 import multi from "../src/img/black-multi.png";
 export const skillsData = [
   { image: html, name: "HTML 5" },
@@ -25,7 +25,7 @@ export const workData = [
   {
     name: "To-Do-App",
     description: "A daily to do planner app made using ReactJs",
-    link: "https://to-do-planener-app.netlify.app/",
+    link: "https://to-do-planner-app.netlify.app/",
     image:
       "https://clickup.com/blog/wp-content/uploads/2019/01/to-do-list-apps.png",
     gitLink: "https://github.com/Inder12801/To-Do-App",

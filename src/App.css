@@ -20,7 +20,7 @@ html {
 
 :root {
   --xcolor: #ec0101;
-  /* --xcolor: #26f05f; */
+  /* --xcolor: #ffb200; */
   --default-br: 30px;
 }
 ::-webkit-scrollbar {
@@ -47,7 +47,7 @@ html {
   width: 100px;
   height: 10px;
   border-radius: 0 20px 20px 0;
-  background-color: red;
+  background-color: var(--xcolor);
   animation: barAnim 1s 1s infinite alternate-reverse;
 }
 
@@ -248,7 +248,7 @@ a {
   align-items: flex-end;
   background: linear-gradient(to left, #3e3e3e, #1d1d1d);
   border-radius: 100%;
-  border: 6px solid whitesmoke;
+  border: 6px solid var(--xcolor);
 }
 
 /* .imageDiv div {
@@ -307,9 +307,15 @@ a {
 
 .about-avatar {
   margin: 30px 0;
+  border-radius: 100%;
+  border: 5px solid var(--xcolor);
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .about-avatar img {
   width: 150px;
+  margin: 0;
 }
 .bar {
   position: absolute;

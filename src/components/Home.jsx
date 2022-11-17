@@ -38,7 +38,7 @@ const Home = () => {
           <li>
             <a href="#myWork">Work</a>
           </li>
-          <li onClick={handleMenu}>
+          <li>
             <a href="#contact">Contact</a>
           </li>
         </ul>
@@ -70,7 +70,8 @@ const Home = () => {
           </p>
           <button id="download" className="btn">
             <a
-              href="/src/assets/Training Guidelines - CSE Department .pdf"
+              href="https://drive.google.com/file/d/1J41ou8cHYIQt7HmruV1S9fNbv8Sf3BuN/view?usp=share_link"
+              target="_blanc"
               download={"Resume.pdf"}
             >
               Download CV
